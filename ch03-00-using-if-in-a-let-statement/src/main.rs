@@ -11,7 +11,6 @@ fn main() {
     let mut generated_string = String::new();
 
     for _ in 0..8 {
-
         // You can use an if-statement even in variable binding.
         let next_character = if currently_vowel {
             vowels[rand::thread_rng().gen_range(0..6)]
@@ -23,5 +22,5 @@ fn main() {
         currently_vowel = !currently_vowel;
     }
 
-    println!("{}", generated_string);
+    println!("{generated_string}");
 }
