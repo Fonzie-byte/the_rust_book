@@ -3,7 +3,7 @@ fn print_number(number: i32) {
 }
 
 fn print_labeled_measurement(amount: i32, unit_label: char) {
-	println!("The measurement is {amount}{unit_label}.");
+    println!("The measurement is {amount}{unit_label}.");
 }
 
 fn main() {
