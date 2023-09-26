@@ -15,6 +15,8 @@ fn main() {
         let next_character = if currently_vowel {
             vowels[rand::thread_rng().gen_range(0..6)]
         } else {
+            // This would return an "incompatible types"-error.
+            // rand::thread_rng().gen_range(0..20)
             consonants[rand::thread_rng().gen_range(0..20)]
         };
 
