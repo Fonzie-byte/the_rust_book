@@ -3,6 +3,7 @@ fn main() {
 
     let x = x + 1;
 
+    // We're just starting a new scope here, nothing more.
     {
         let x = x * 2;
 
