@@ -1,8 +1,8 @@
 fn main() {
-    let s1 = gives_ownership();        // Function moves its value to this scope
+    let s1 = gives_ownership(); // Function moves its value to this scope
     println!("I have received what is {s1}");
 
-    let s2 = String::from("hello");    // String comes into scope
+    let s2 = String::from("hello"); // String comes into scope
     println!("I just came into scope to say {s2}");
 
     let s3 = takes_and_gives_back(s2); // String moved out of scope and returned
@@ -15,10 +15,11 @@ fn gives_ownership() -> String {
 
     println!("Wait a minute, I'll be {some_string}");
 
-    some_string                              // It's returned into prev. scope
+    some_string // It's returned into previous scope
 }
 
-fn takes_and_gives_back(mut a_string: String) -> String { // Str taken fr scope
+// Str taken from scope
+fn takes_and_gives_back(mut a_string: String) -> String {
     println!("{a_string}? Did you drop something?");
 
     a_string = String::from("goodbye");
