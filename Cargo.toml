@@ -1,0 +1,27 @@
+[package]
+name = "the_rust_book"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[workspace]
+members = [
+	"ch01-03-hello-cargo",
+	"ch02-00-guessing-game",
+	"ch03-00-functions",
+	"ch03-00-handling-multiple-conditions-with-else-if",
+	"ch03-00-parameters",
+	"ch03-00-repeat-code-with-loop",
+	"ch03-00-shadowing",
+	"ch03-00-statements-and-expressions",
+	"ch03-00-using-if-in-a-let-statement",
+	"ch03-01-variables",
+	"ch03_02_data_types",
+	"ch04-01-variables-and-data-interacting-with-move",
+	"ch04-02-ownership-and-functions",
+	"ch04-03-return-values-and-scope",
+]
+
+[workspace.dependencies]
+rand = "0.8.5"
